@@ -3,21 +3,37 @@
 <head>
   <meta charset="utf-8">
   <title>Rock Paper Scissor</title>
+  <link rel="stylesheet" href="rps.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 <body>
-
-  <h1>Rock Paper Scissors</h1>
-  <form>
-    <button type="button" id="rock" onclick="game('rock')" value="rock">Rock</button>
-    <button type="button" id="paper" name="btn" onclick="game('paper')" value="paper">Paper</button>
-    <button type="button" id="scissors" name="btn" onclick="game('scissors')" value="scissors">Scissors</button>
-  </form>
-  <p id="message"></p>
-  <h3>Score</h3>
+  <header>
+  <img id="logo-img" src="logo.png" alt="logo image"/>
+  <h1 id="title">Rock Paper Scissors</h1>
+  </header>
+  <main>
+    <div class="img-section">
+      <h3 id="players">Player</h3>
+      <img id="hand-img-user" src="leftrock.png"/>
+      <h3 id="result">You Won!!</h3>
+      <img id="hand-img-computer" src="rightrock.png"/>
+      <h3 id="players">Computer</h3>
+    </div>
+  <div class="btn-container">
+    <button class="btn" id="rock" value="rock">Rock</button>
+    <button class="btn" id="paper" value="paper">Paper</button>
+    <button class="btn" id="scissors" value="scissors">Scissors</button>
+  </div>
+  <div class="score-board">
+  <!-- <p id="message"></p> -->
+  <h2>Score</h2>
   <p>Player: <span id="score-player">0</span></p>
   <p>Computer: <span id="score-computer">0</span></p>
-
-
+  </div>
+</main>
+<footer>
+  <h4>Made By: <a id="footer-link" href="https://github.com/5addam/" target="_blank"><i class="fa fa-github-square" style="font-size:larger; background-color:black;"></i>5addam</a></h4>
+</footer>
 <script src="rps.js">
 </script>
 
